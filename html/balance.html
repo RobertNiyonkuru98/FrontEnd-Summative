@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/mobile.css" />
+    <title>BALANCE</title>
+  </head>
+  <body>
+    <header role="banner">
+      <nav role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+          <div class="nav-brand">
+            <h1 class="logo">💵MyTracker💵</h1>
+            <button class="nav-toggle">
+              <span class="hamburger"></span>
+              <span class="hamburger"></span>
+              <span class="hamburger"></span>
+            </button>
+          </div>
+          <ul class="nav-menu">
+            <li><a href="./home.html" class="nav-link">Home</a></li>
+            <li>
+              <a href="./dashboard.html" class="nav-link">Dashboard</a>
+            </li>
+            <li>
+              <a href="./transaction.html" class="nav-link">Transactions</a>
+            </li>
+            <li>
+              <a href="./balance.html" class="nav-link active">Balance</a>
+            </li>
+            <li>
+              <a href="./history.html" class="nav-link">History</a>
+            </li>
+            <li>
+              <a href="./settings.html" class="nav-link">Settings</a>
+            </li>
+            <li><a href="./about.html" class="nav-link">About</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content" role="main">
+      <section
+        id="balance"
+        class="section active"
+        aria-labelledby="balance-heading"
+      >
+        <div class="container">
+          <h2 id="balance-heading">Current Balance</h2>
+
+          <div class="balance-card">
+            <h3>Available Balance</h3>
+            <p class="balance-amount" id="balance-amount">RWF 0</p>
+            <p class="balance-updated">
+              Last updated: <span id="balance-updated">--</span>
+            </p>
+          </div>
+
+          <!-- Breakdown by Category -->
+          <div class="category-breakdown">
+            <h3>Spending by Category</h3>
+            <ul id="category-breakdown-list" class="breakdown-list">
+              <!-- Dynamic list -->
+            </ul>
+          </div>
+
+          <!-- Currency Conversion -->
+          <div class="currency-conversion">
+            <h3>Currency Conversion</h3>
+            <p class="help-text">Your balance in other currencies:</p>
+            <div class="conversion-grid">
+              <div class="conversion-item">
+                <span class="currency-label">USD</span>
+                <span class="currency-value" id="balance-usd">$0.00</span>
+              </div>
+              <div class="conversion-item">
+                <span class="currency-label">EUR</span>
+                <span class="currency-value" id="balance-eur">€0.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer role="contentinfo">
+      <div class="container">
+        <p>&copy; 2025 💵MyTracker💵. Built for students, by students.</p>
+      </div>
+    </footer>
+    <script type="module" src="../scripts/app.js"></script>
+  </body>
+</html>

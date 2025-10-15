@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>TRANSACTION FORM</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-container">
+          <div class="nav-brand">
+            <h1 class="logo">💵MyTracker💵</h1>
+            <button class="nav-toggle">
+              <span class="hamburger"></span>
+              <span class="hamburger"></span>
+              <span class="hamburger"></span>
+            </button>
+          </div>
+          <ul class="nav-menu">
+            <li><a href="./home.html" class="nav-link">Home</a></li>
+            <li>
+              <a href="./dashboard.html" class="nav-link">Dashboard</a>
+            </li>
+            <li>
+              <a href="./transaction.html" class="nav-link active"
+                >Transactions</a
+              >
+            </li>
+            <li>
+              <a href="./balance.html" class="nav-link">Balance</a>
+            </li>
+            <li>
+              <a href="./history.html" class="nav-link">History</a>
+            </li>
+            <li>
+              <a href="./settings.html" class="nav-link">Settings</a>
+            </li>
+            <li><a href="./about.html" class="nav-link">About</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ADD/EDIT TRANSACTION FORM SECTION -->
+      <section class="section active" id="transaction-form-section">
+        <div class="container">
+          <h2 id="form-heading">Add Transaction</h2>
+
+          <form id="transaction-form" class="form" novalidate>
+            <div class="form-group">
+              <label for="description"
+                >Description
+                <span class="required" aria-label="required"></span>
+              </label>
+              <input
+                type="text"
+                name="description"
+                id="description"
+                class="form-input"
+                required
+                aria-required="true"
+                aria-describedby="description-error description-help"
+                placeholder="e.g., Lunch at cafeteria"
+              />
+              <span class="help-text" id="description-help"
+                >No leading/trailing spaces allowed</span
+              >
+              <span
+                class="error-message"
+                id="description-error"
+                role="alert"
+              ></span>
+            </div>
+
+            <div class="form-group">
+              <label for="amount">
+                Amount (RWF)
+                <span class="required" aria-label="required">*</span>
+              </label>
+
+              <input
+                type="text"
+                name="amount"
+                class="form-input"
+                id="amount"
+                required
+                aria-required="true"
+                aria-describedby="amount-error amount-help"
+                placeholder="0.00"
+              />
+              <span class="help-text" id="amount-help"
+                >Positive number with max 2 decimals</span
+              >
+              <span class="error-message" id="amount-error" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="category"
+                >Category
+                <span class="required" aria-label="required">*</span></label
+              >
+              <select
+                name="category"
+                id="category"
+                class="form-input"
+                required
+                aria-required="true"
+                aria-describedby="category-error"
+              >
+                <option value="">-- Select Category --</option>
+                <option value="Food">Food</option>
+                <option value="Books">Books</option>
+                <option value="Transport">Transport</option>
+                <option value="Entertainment">Entertainment</option>
+                <option value="Fees">Fees</option>
+                <option value="Other">Other</option>
+              </select>
+              <span
+                class="error-message"
+                id="category-error"
+                role="alert"
+              ></span>
+            </div>
+
+            <div class="form-group">
+              <label for="date"
+                >Date
+                <span class="required" aria-label="required">*</span></label
+              >
+              <input
+                type="text"
+                class="form-input"
+                id="date"
+                required
+                aria-required="true"
+                aria-describedby="date-error date-help"
+                placeholder="YYYY-MM-DD"
+              />
+              <span class="help-text" id="date-help">Format: YYYY-MM-DD</span>
+              <span class="error-message" id="date-error" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="payment-method">Payment Method (Optional)</label>
+              <select
+                id="payment-method"
+                name="paymentMethod"
+                class="form-input"
+              >
+                <option value="">-- Select --</option>
+                <option value="Cash">Cash</option>
+                <option value="Mobile Money">Mobile Money</option>
+                <option value="Card">Card</option>
+              </select>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">
+                💾 Save Transaction
+              </button>
+              <button type="button" class="btn btn-secondary" id="cancel-form">
+                ❌ Cancel
+              </button>
+            </div>
+
+            <!-- Form-level status message -->
+            <div
+              id="form-status"
+              class="form-status"
+              role="status"
+              aria-live="polite"
+            ></div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer role="contentinfo">
+      <div class="container">
+        <p>&copy; 2025 💵MyTracker💵. Built for students, by students.</p>
+      </div>
+    </footer>
+    <script type="module" src="../scripts/app.js"></script>
+  </body>
+</html>
