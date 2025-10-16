@@ -60,3 +60,9 @@ Usage
    - Amount: e.g., "12.50" (max 2 decimals)
    - Category: Select from dropdown
    - Date: YYYY-MM-DD format
+
+# DEMO VIDEO LINK
+
+Below is the link to the DEMO video for the website
+
+https://drive.google.com/file/d/1E6FjGmeoWfKKxws3JNFRaG8kZ2uImlR3/view?usp=sharing
