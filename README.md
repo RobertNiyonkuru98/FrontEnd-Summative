@@ -61,8 +61,12 @@ Usage
    - Category: Select from dropdown
    - Date: YYYY-MM-DD format
 
-# DEMO VIDEO LINK
+# DEMO VIDEO LINK/
 
 Below is the link to the DEMO video for the website
 
 https://drive.google.com/file/d/1E6FjGmeoWfKKxws3JNFRaG8kZ2uImlR3/view?usp=sharing
+
+# FIGMA SKETCH LINK/
+
+https://www.figma.com/design/Du8uTuu6iuqXJ92TjZXwLf/SUMMATIVE?node-id=0-1&t=C0fg3jaa0cx4VmFs-1
