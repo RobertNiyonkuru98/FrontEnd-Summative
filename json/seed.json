@@ -1,0 +1,163 @@
+{
+  "version": "1.0.0",
+  "exportDate": "2025-10-11T14:30:00.000Z",
+  "transactions": [
+    {
+      "id": "txn_1728567890123_0001",
+      "description": "Lunch at cafeteria",
+      "amount": 12500,
+      "category": "Food",
+      "date": "2025-10-11",
+      "paymentMethod": "Cash",
+      "createdAt": "2025-10-11T12:30:00.000Z",
+      "updatedAt": "2025-10-11T12:30:00.000Z"
+    },
+    {
+      "id": "txn_1728567890123_0002",
+      "description": "Chemistry textbook",
+      "amount": 89900,
+      "category": "Books",
+      "date": "2025-10-09",
+      "paymentMethod": "Mobile Money",
+      "createdAt": "2025-10-09T10:15:00.000Z",
+      "updatedAt": "2025-10-09T10:15:00.000Z"
+    },
+    {
+      "id": "txn_1728567890123_0003",
+      "description": "Bus pass monthly",
+      "amount": 45000,
+      "category": "Transport",
+      "date": "2025-10-08",
+      "paymentMethod": "Card",
+      "createdAt": "2025-10-08T08:00:00.000Z",
+      "updatedAt": "2025-10-08T08:00:00.000Z"
+    },
+    {
+      "id": "txn_1728567890123_0004",
+      "description": "Coffee with friends",
+      "amount": 8750,
+      "category": "Entertainment",
+      "date": "2025-10-10",
+      "paymentMethod": "Cash",
+      "createdAt": "2025-10-10T16:45:00.000Z",
+      "updatedAt": "2025-10-10T16:45:00.000Z"
+    },
+    {
+      "id": "txn_1728567890123_0005",
+      "description": "Notebook and pens",
+      "amount": 5200,
+      "category": "Books",
+      "date": "2025-10-07",
+      "paymentMethod": "Cash",
+      "createdAt": "2025-10-07T14:20:00.000Z",
+      "updatedAt": "2025-10-07T14:20:00.000Z"
+    },
+    {
+      "id": "txn_1728567890123_0006",
+      "description": "Dinner at restaurant",
+      "amount": 28500,
+      "category": "Food",
+      "date": "2025-10-06",
+      "paymentMethod": "Mobile Money",
+      "createdAt": "2025-10-06T19:30:00.000Z",
+      "updatedAt": "2025-10-06T19:30:00.000Z"
+    },
+    {
+      "id": "txn_1728567890123_0007",
+      "description": "Movie tickets",
+      "amount": 15000,
+      "category": "Entertainment",
+      "date": "2025-10-05",
+      "paymentMethod": "Card",
+      "createdAt": "2025-10-05T18:00:00.000Z",
+      "updatedAt": "2025-10-05T18:00:00.000Z"
+    },
+    {
+      "id": "txn_1728567890123_0008",
+      "description": "Taxi to campus",
+      "amount": 3500,
+      "category": "Transport",
+      "date": "2025-10-11",
+      "paymentMethod": "Cash",
+      "createdAt": "2025-10-11T07:45:00.000Z",
+      "updatedAt": "2025-10-11T07:45:00.000Z"
+    },
+    {
+      "id": "txn_1728567890123_0009",
+      "description": "Registration fee payment",
+      "amount": 125000,
+      "category": "Fees",
+      "date": "2025-10-04",
+      "paymentMethod": "Mobile Money",
+      "createdAt": "2025-10-04T09:00:00.000Z",
+      "updatedAt": "2025-10-04T09:00:00.000Z"
+    },
+    {
+      "id": "txn_1728567890123_0010",
+      "description": "Breakfast at cafe",
+      "amount": 6500,
+      "category": "Food",
+      "date": "2025-10-10",
+      "paymentMethod": "Cash",
+      "createdAt": "2025-10-10T08:30:00.000Z",
+      "updatedAt": "2025-10-10T08:30:00.000Z"
+    },
+    {
+      "id": "txn_1728567890123_0011",
+      "description": "USB flash drive",
+      "amount": 12000,
+      "category": "Other",
+      "date": "2025-10-03",
+      "paymentMethod": "Card",
+      "createdAt": "2025-10-03T15:20:00.000Z",
+      "updatedAt": "2025-10-03T15:20:00.000Z"
+    },
+    {
+      "id": "txn_1728567890123_0012",
+      "description": "Green tea latte",
+      "amount": 4500,
+      "category": "Food",
+      "date": "2025-10-09",
+      "paymentMethod": "Cash",
+      "createdAt": "2025-10-09T14:15:00.000Z",
+      "updatedAt": "2025-10-09T14:15:00.000Z"
+    },
+    {
+      "id": "txn_1728567890123_0013",
+      "description": "Mathematics reference book",
+      "amount": 42000,
+      "category": "Books",
+      "date": "2025-10-02",
+      "paymentMethod": "Mobile Money",
+      "createdAt": "2025-10-02T11:30:00.000Z",
+      "updatedAt": "2025-10-02T11:30:00.000Z"
+    },
+    {
+      "id": "txn_1728567890123_0014",
+      "description": "Moto ride home",
+      "amount": 2000,
+      "category": "Transport",
+      "date": "2025-10-08",
+      "paymentMethod": "Cash",
+      "createdAt": "2025-10-08T17:50:00.000Z",
+      "updatedAt": "2025-10-08T17:50:00.000Z"
+    },
+    {
+      "id": "txn_1728567890123_0015",
+      "description": "Snacks and juice",
+      "amount": 7800,
+      "category": "Food",
+      "date": "2025-10-07",
+      "paymentMethod": "Cash",
+      "createdAt": "2025-10-07T13:45:00.000Z",
+      "updatedAt": "2025-10-07T13:45:00.000Z"
+    }
+  ],
+  "settings": {
+    "baseCurrency": "RWF",
+    "usdRate": 1200,
+    "eurRate": 1300,
+    "monthlyBudget": 100000,
+    "theme": "light"
+  }
+}
