@@ -1,4 +1,36 @@
 /* ============================================
+   FINANCE TRACKER - MULTI-PAGE APP
+   Works with separate HTML files
+   ============================================ */
+
+// Import modules
+import {
+  validateDescription,
+  validateAmount,
+  validateDate,
+  validateCategory,
+} from "./validators.js";
+import {
+  loadTransactions,
+  addTransaction as saveNewTransaction,
+  updateTransaction as saveUpdatedTransaction,
+  deleteTransaction as removeTransaction,
+  clearTransactions,
+  loadSettings,
+  saveSettings,
+  exportData,
+  uploadDataFromFile,
+} from "./storage.js";
+import {
+  renderTransactions,
+  updateDashboard,
+  updateBalancePage,
+  updateHistoryPage,
+  filterTransactionsByRegex,
+  sortTransactions,
+} from "./ui.js";
+
+/* ============================================
    PAGE INITIALIZATION
    ============================================ */
 
@@ -514,7 +546,7 @@ class TransactionFormPage {
 }
 
 /* ============================================
-   DELETE HANDLER
+   GLOBAL DELETE HANDLER
    ============================================ */
 
 window.handleDelete = function (id) {
@@ -531,7 +563,7 @@ window.handleDelete = function (id) {
 };
 
 /* ============================================
-   INITIALIZE ON THE PAGES
+   INITIALIZE ON PAGE LOAD
    ============================================ */
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -541,6 +573,30 @@ document.addEventListener("DOMContentLoaded", () => {
   } else {
     window.app = new App();
   }
+});
+
+// Handle navigation buttons
+document.querySelectorAll("[data-navigate]").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const target = btn.getAttribute("data-navigate").trim();
+    if (target === "dashboard") {
+      window.location.href = "./dashboard.html";
+    } else if (target === "transaction") {
+      window.location.href = "./transaction.html";
+    } else if (target === "task") {
+      window.location.href = "./task.html";
+    }
+  });
+});
+
+// Also fix navigation link activation
+document.querySelectorAll(".nav-link").forEach((link) => {
+  link.addEventListener("click", () => {
+    document
+      .querySelectorAll(".nav-link")
+      .forEach((l) => l.classList.remove("active"));
+    link.classList.add("active");
+  });
 });
 
 export { App, TransactionFormPage };
